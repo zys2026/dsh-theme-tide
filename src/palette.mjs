@@ -14,7 +14,7 @@
  */
 
 /** Theme layer identity passed to ThemeRuntime.overrideTokens. */
-export const SOURCE = '@local/dsh-theme-tide';
+export const SOURCE = 'dsh-theme-tide';
 
 export const LABEL = {
   zh: '潮汐木色',

@@ -21,7 +21,7 @@
 (function () {
   'use strict';
 
-  var SOURCE = '@local/dsh-theme-tide';
+  var SOURCE = 'dsh-theme-tide';
   var LIGHT = {
   "--dsw-alias-bg-base": "#f7f2e8",
   "--dsw-alias-bg-document-preview": "#efe6d6",

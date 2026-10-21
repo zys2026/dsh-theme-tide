@@ -76,13 +76,13 @@ dsh plugin --profile web add link:/Users/ys/Documents/deepseek/dsh-theme-tide
 ### 方式 B：运行中热挂载（本次会话采用）
 
 1. 把包链接进 profile：
-   `ln -s /Users/ys/Documents/deepseek/dsh-theme-tide ~/.dsh/profiles/web/node_modules/@local/dsh-theme-tide`
+   `ln -s "$(pwd)" ~/.dsh/profiles/web/node_modules/dsh-theme-tide`
 2. 在 `~/.dsh/profiles/web/cordis.patch.yml` 追加：
 
    ```yaml
    - insert:
        - id: dsh-theme-tide
-         name: '@local/dsh-theme-tide'
+         name: 'dsh-theme-tide'
          config: {}
    ```
 
@@ -106,7 +106,7 @@ node dsh-theme-tide/tools/audit.mjs --write-preview  # 更新 previews/audit.md
 
 ## 卸载
 
-删除 `~/.dsh/profiles/web/cordis.patch.yml` 里的 `dsh-theme-tide` insert 行，再删除 profile 的 `node_modules/@local/dsh-theme-tide` 链接即可；页面刷新后恢复默认配色。
+删除 `~/.dsh/profiles/web/cordis.patch.yml` 里的 `dsh-theme-tide` insert 行，再删除 profile 的 `node_modules/dsh-theme-tide` 链接即可；页面刷新后恢复默认配色。
 
 ## 兼容性
 
