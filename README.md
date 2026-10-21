@@ -13,6 +13,27 @@
 - **自适应**：跟随 DSH 自带的 浅色 / 深色 / 跟随系统 设置，不需要另设开关。
 - **可热插拔**：主题注册在 `ctx.effect` 内，禁用插件或热重载会精确撤回这一层 token。
 
+## 安装
+
+需要 DeepSeek Harness **0.2.1-rc.2** 及以上（`dsh-client-ui-theme` 的第三方主题入口在该版本提供）。
+
+```sh
+# 直接从仓库安装（当前可用）
+dsh plugin --profile web add github:zys2026/dsh-theme-tide
+```
+
+装完重启 dsh（或在插件管理器里重载），主题会跟随 DSH 自带的「浅色 / 深色 / 跟随系统」设置自动切换，不需要额外开关。
+
+**卸载 / 临时停用**：
+
+```sh
+dsh plugin --profile web remove dsh-theme-tide   # 卸载
+```
+
+或在插件管理器里把 `dsh-theme-tide` 设为禁用——主题注册在 `ctx.effect` 内，禁用会精确撤回这一层 token，不会残留。
+
+**要求**：主题只通过官方 `--dsw-alias-*` token 覆盖上色，不改布局、不注入壁纸、不劫持 DOM；因此 DSH 升级若增删 token，未覆盖的新 token 会回落到内置默认色，不会破坏界面。
+
 ## 设计要点
 
 | 项 | 值 |
