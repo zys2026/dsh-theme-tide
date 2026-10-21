@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tide & Timber">
+  <defs>
+    <linearGradient id="tide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f2e8"/>
+      <stop offset="0.52" stop-color="#5fd0c2"/>
+      <stop offset="1" stop-color="#0a1418"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0a1418"/>
+  <path d="M14 26c6-7 12-7 18 0s12 7 18 0v9c-6 7-12 7-18 0s-12-7-18 0z" fill="#5fd0c2"/>
+  <path d="M14 41c6-7 12-7 18 0s12 7 18 0v9c-6 7-12 7-18 0s-12-7-18 0z" fill="url(#tide)" opacity="0.72"/>
+  <circle cx="47" cy="17" r="5" fill="#f7f2e8"/>
+</svg>

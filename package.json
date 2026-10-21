@@ -1,0 +1,50 @@
+{
+  "name": "dsh-theme-tide",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "Tide & Timber (潮汐木色) — a coastal light/dark theme for the DeepSeek Harness Web GUI, built on the official ThemeRuntime alias-token layer.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "theme"
+  ],
+  "license": "MIT",
+  "author": "zys2026",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zys2026/dsh-theme-tide.git"
+  },
+  "homepage": "https://github.com/zys2026/dsh-theme-tide#readme",
+  "bugs": {
+    "url": "https://github.com/zys2026/dsh-theme-tide/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "audit": "node tools/audit.mjs",
+    "audit:json": "node tools/audit.mjs --json",
+    "preview": "node tools/audit.mjs --write-preview"
+  }
+}

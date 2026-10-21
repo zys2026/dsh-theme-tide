@@ -1,0 +1,6 @@
+# Tide & Timber (潮汐木色): insert the client row into the Web plugin roster.
+# The row's browser half registers a ThemeRuntime alias-token layer.
+- insert:
+    - id: dsh-theme-tide
+      name: 'dsh-theme-tide'
+      config: {}
